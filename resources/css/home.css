@@ -496,3 +496,63 @@ iframe{
 .section-palestras.show{
     min-height: calc(100% - 157.98px - 137.59px);
 }
+
+
+
+/* breadcrumb */
+
+.breadcrumb {
+    padding: 10px 15px;
+    margin-bottom: 0;
+    list-style: none;
+    background-color: #757576;
+}
+
+.breadcrumb-item {
+    display: inline-block;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: rgba(255,255,255,0.7);
+    content: "/";
+}
+
+
+.breadcrumb a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+}
+
+
+.breadcrumb-item.active {
+    color: rgb(255,255,255);
+    font-weight: bold;
+}
+
+
+@media (min-width: 1200px)
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1140px;
+}
+
+@media (min-width: 992px)
+.container, .container-lg, .container-md, .container-sm {
+    max-width: 960px;
+}
+@media (min-width: 768px)
+.container, .container-md, .container-sm {
+    max-width: 720px;
+}
+@media (min-width: 576px)
+.container, .container-sm {
+    max-width: 540px;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}

@@ -1,4 +1,7 @@
 <x-portal-layout>
+
+    {{ Breadcrumbs::render('postagem', $post) }}
+
     <section class="section section-palestras show">
         <div class="container">
             <div class="row">
