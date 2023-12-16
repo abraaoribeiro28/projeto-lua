@@ -123,6 +123,15 @@
                             </a>
                         </li>
                     @endcan
+
+                    @can('viewPulse')
+                        <li class="nk-menu-item">
+                            <a href="/admin/pulse" class="nk-menu-link">
+                                <span class="nk-menu-icon"><i class="icon bi bi-activity"></i></span>
+                                <span class="nk-menu-text">Laravel Pulse</span>
+                            </a>
+                        </li>
+                    @endcan
                 </ul>
             </div>
         </div>

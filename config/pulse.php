@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'path' => env('PULSE_PATH', 'pulse'),
+    'path' => env('PULSE_PATH', 'admin/pulse'),
 
     /*
     |--------------------------------------------------------------------------
@@ -115,6 +115,7 @@ return [
 
     'middleware' => [
         'web',
+        'auth',
         Authorize::class,
     ],
 
