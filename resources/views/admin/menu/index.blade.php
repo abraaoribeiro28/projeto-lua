@@ -36,11 +36,11 @@
     </div>
 
 @section('script')
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+        @parent
+        <script defer src="{{ asset('assets/modules/sortable/sortable.min.js') }}"></script>
         <script defer src="{{ asset('assets/js/menu.js') }}"></script>
 
         <script>
-
             async function confirmDelete(id){
                 const item = document.querySelector('#item-'+id);
 

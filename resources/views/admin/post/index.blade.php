@@ -110,6 +110,7 @@
     </div>
 
     @section('script')
+        @parent
         <script>
             async function confirmDelete(id){
                 const item = document.querySelector(`#item-${id}`);

@@ -86,6 +86,7 @@
     </div>
 
     @section('script')
+        @parent
         <script>
             // Salvando último tab clicado
             const tabs = document.querySelectorAll('.nav-tabs .nav-link');

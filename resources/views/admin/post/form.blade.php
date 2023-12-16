@@ -54,10 +54,12 @@
     </div>
 
     @section('style')
+        @parent
         <link rel="stylesheet" href="{{ url('theme/src/assets/css/editors/summernote.css') }}">
     @endsection
 
     @section('script')
+        @parent
         <script src="{{ url('theme/src/assets/js/libs/editors/summernote.js') }}"></script>
         <script src="{{ url('theme/src/assets/js/editors.js') }}"></script>
 

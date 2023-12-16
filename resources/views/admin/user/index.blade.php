@@ -119,6 +119,7 @@
         </div>
     </div>
     @section('script')
+        @parent
         <script>
             const switchElement = document.querySelectorAll('.switch');
 

@@ -127,3 +127,11 @@
 #roles{
     max-width: 100% !important;
 }
+
+.toast{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    margin: 0 !important;
+    line-height: normal;
+}

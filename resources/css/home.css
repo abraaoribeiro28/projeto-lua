@@ -62,7 +62,7 @@ iframe{
 
 .main-section form {
     display: flex;
-    max-width: 400px;
+    max-width: 500px;
     margin-top: 30px;
     border-radius: 6px;
     box-shadow: 0 18px 40px -10px #3b207a;
@@ -90,6 +90,7 @@ iframe{
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
     font-weight: 500;
+    white-space: nowrap;
 }
 
 .main-section button:hover,
@@ -165,6 +166,7 @@ iframe{
     max-width: 100%;
     vertical-align: middle;
     display: inline-block;
+    max-height: 500px;
 }
 
 .section-visao h2,
@@ -183,12 +185,13 @@ iframe{
 }
 
 
+
 /* --- Palestras --- */
-.section-palestras a{
+.section-post a{
     color: var(--dark-blue);
 }
 
-.section-palestras h3{
+.section-post h3{
     margin-top: 0px;
     margin-bottom: 20px;
     font-size: 26px;
@@ -196,7 +199,7 @@ iframe{
     font-weight: 800;
 }
 
-.section-palestras h4 {
+.section-post h4 {
     margin-bottom: 20px;
     font-size: 18px;
     line-height: 24px;
@@ -493,7 +496,7 @@ iframe{
 }
 
 
-.section-palestras.show{
+.section-post.show{
     min-height: calc(100% - 157.98px - 137.59px);
 }
 
@@ -530,22 +533,25 @@ iframe{
 }
 
 
-@media (min-width: 1200px)
-.container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1140px;
+@media (min-width: 1200px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1140px;
+    }
 }
-
-@media (min-width: 992px)
-.container, .container-lg, .container-md, .container-sm {
-    max-width: 960px;
+@media (min-width: 992px){
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 960px;
+    }
 }
-@media (min-width: 768px)
-.container, .container-md, .container-sm {
-    max-width: 720px;
+@media (min-width: 768px){
+    .container, .container-md, .container-sm {
+        max-width: 720px;
+    }
 }
-@media (min-width: 576px)
-.container, .container-sm {
-    max-width: 540px;
+@media (min-width: 576px){
+    .container, .container-sm {
+        max-width: 540px;
+    }
 }
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     --bs-gutter-x: 1.5rem;

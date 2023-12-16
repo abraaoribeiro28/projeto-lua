@@ -100,5 +100,9 @@
             </div>
         </div>
     </div>
-    <script src="{{ url('assets/js/checkAll.js') }}"></script>
+
+    @section('script')
+        @parent
+        <script src="{{ url('assets/js/checkAll.js') }}"></script>
+    @endsection
 </x-app-layout>

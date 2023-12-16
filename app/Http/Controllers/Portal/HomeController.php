@@ -31,7 +31,7 @@ class HomeController extends Controller
                 ->where('id', '<>', $mostViewedPost->id)
                 ->orderByDesc('publication_date')
                 ->orderBy('id', 'desc')
-                ->limit(10)
+                ->limit(3)
                 ->get();
         });
 
@@ -46,6 +46,6 @@ class HomeController extends Controller
                 ->get();
         });
 
-        return view('portal.pages.home', compact('posts', 'mostViewedPost', 'instagramPosts', 'ebooks'));
+        return view('portal.home.index', compact('posts', 'mostViewedPost', 'instagramPosts', 'ebooks'));
     }
 }
